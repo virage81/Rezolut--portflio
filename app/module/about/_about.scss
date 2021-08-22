@@ -58,17 +58,14 @@
 					color: #d0b194;
 					font-size: 60px;
 					line-height: 60px;
+					font-variant-numeric: lining-nums;
 
 					margin-bottom: 10px;
-
-					font-feature-settings: 'pnum' on, 'lnum' on;
 				}
 
 				&__text {
 					font-size: 15px;
 					line-height: 22px;
-
-					opacity: 0.7;
 				}
 			}
 		}
