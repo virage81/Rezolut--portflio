@@ -20,7 +20,7 @@ function browsersync() {
 }
 
 function nunjucks() {
-	return src('app/njk/*.njk').pipe(nunjucksRender()).pipe(dest('app/')).pipe(browserSync.stream());
+	return src('app/njk/*.njk').pipe(nunjucksRender()).pipe(dest('app')).pipe(browserSync.stream());
 }
 
 function styles() {
