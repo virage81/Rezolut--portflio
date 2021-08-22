@@ -65,7 +65,7 @@ function images() {
 }
 
 function build() {
-	return src(['app/**/*.html', 'app/css/style.min.css', 'app/js/main.min.js'], { base: 'app' }).pipe(dest('dist/'));
+	return src(['app/**/*.html', 'app/css/style.min.css', 'app/js/main.min.js', 'app/fonts/*.*'], { base: 'app' }).pipe(dest('dist/'));
 }
 
 function cleanDist() {
@@ -74,7 +74,7 @@ function cleanDist() {
 
 function watching() {
 	watch(['app/**/*.scss'], styles);
-	watch(['app/njk/*.njk', 'app/module/**/*.html']);
+	watch(['app/njk/*.njk', 'app/module/**/*.html'], nunjucks);
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
 	watch(['app/**/*.html']).on('change', browserSync.reload);
 }
