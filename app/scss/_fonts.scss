@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'CormorantInfant';
+	src: url('../fonts/CormorantInfant-Medium.woff2') format('woff2'),
+		url('../fonts/CormorantInfant-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CormorantInfant';
+	src: url('../fonts/CormorantInfant-Regular.woff2') format('woff'), url(../fonts/CormorantInfant-Regular.woff) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/latobold.woff2') format('woff2'),
+		url('../fonts/latobold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Medium'), local('Lato-Medium'), url('../fonts/latomedium.woff2') format('woff2'),
+		url('../fonts/latomedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'),
+		url('../fonts/latoregular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,66 @@
+body {
+	font-family: 'Lato';
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+
+	color: #3c3d3d;
+	background-color: #fff;
+}
+
+.container {
+	max-width: 1650px;
+	width: 100%;
+
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-wide {
+	max-width: 1950px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: CormorantInfant;
+	color: #2f2f2f;
+	font-weight: 400;
+}
+
+.suptitle {
+	color: #d0b194;
+	font-size: 17px;
+	line-height: 22px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.link {
+	color: #d0b194;
+
+	position: relative;
+
+	line-height: 27px;
+
+	width: fit-content;
+
+	padding-right: 46px;
+
+	svg {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+
+		width: 31px;
+		height: 16px;
+
+		path {
+			fill: #d0b194;
+		}
+	}
+}

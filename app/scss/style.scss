@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'fonts';
+@import 'normalize';
+
+@import '../../node_modules/slick-carousel/slick/slick';
+
+@import 'glob';
+
+@import "../module/header/header";
+@import "../module/top/top";
+@import "../module/features/features";
+@import "../module/about/about";
+
+@import 'media';
