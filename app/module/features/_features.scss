@@ -1,6 +1,6 @@
 .features {
 	padding-bottom: 140px;
-	margin-top: -35px;
+	margin-top: -40px;
 
 	&__inner {
 		display: flex;
@@ -13,21 +13,22 @@
 
 		min-height: 730px;
 
-		padding: 110px 140px;
+		padding: 111px 140px;
 	}
 
 	&__suptitle {
-		margin-bottom: 40px;
+		margin-bottom: 38px;
 	}
 
 	&__title {
 		font-size: 55px;
 		line-height: 55px;
+		letter-spacing: 0.002em;
 
 		max-width: 1110px;
 
-		padding-bottom: 65px;
-		margin-bottom: 70px;
+		padding-bottom: 70px;
+		margin-bottom: 72px;
 
 		border-bottom: 1px solid #d0b194;
 	}
@@ -44,7 +45,7 @@
 				font-size: 35px;
 				line-height: 35px;
 
-				margin-bottom: 23px;
+				margin-bottom: 20px;
 			}
 
 			&__text {

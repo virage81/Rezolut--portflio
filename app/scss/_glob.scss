@@ -25,7 +25,7 @@ body {
 }
 
 .title {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Cormorant Garamond';
 	color: #2f2f2f;
 	font-weight: 400;
 }
@@ -37,6 +37,14 @@ body {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 400;
+}
+
+.logo {
+	margin-right: 120px;
+	margin-left: 2px;
+	margin-top: 5px;
+
+	display: block;
 }
 
 .link {

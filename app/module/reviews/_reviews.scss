@@ -1,0 +1,71 @@
+.reviews {
+	padding: 248px 0 250px;
+
+	&__item {
+		display: flex !important;
+
+		position: relative;
+		padding-bottom: 100px;
+
+		&-info {
+			max-width: 650px;
+			margin-right: 180px;
+			margin-left: 3px;
+
+			&__suptitle {
+				margin-bottom: 18px;
+			}
+
+			&__text {
+				font-size: 55px;
+				line-height: 66px;
+				font-weight: 400;
+				font-family: 'Cormorant Garamond';
+				color: #2f2f2f;
+
+				margin-bottom: 81px;
+			}
+
+			&__author {
+				margin-left: 92px;
+
+				line-height: 27px;
+				opacity: 0.7;
+			}
+		}
+
+		&-img {
+			max-width: 790px;
+
+			margin-top: 6px;
+
+			object-fit: cover;
+		}
+	}
+
+	.slick-arrow {
+		display: block;
+
+		position: absolute;
+		bottom: 4px;
+		right: 0;
+		z-index: 5;
+
+		cursor: pointer;
+
+		border: none;
+		background-color: transparent;
+
+		font-size: 0;
+
+		margin: 0;
+		padding: 0;
+
+		width: 31px;
+		height: 16px;
+	}
+
+	.slick-prev {
+		right: 60px;
+	}
+}
