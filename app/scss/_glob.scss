@@ -1,3 +1,35 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	background: #fff;
+	font: 18px/1 "Lato-400", sans-serif;
+	color: $default-color;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.container {
+	max-width: 1650px;
+	width: 100%;
+	height: auto;
+
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.logo {
+	transition: all 0.2s linear;
+
+	&:hover {
+		scale: 1.1;
+	}
 }

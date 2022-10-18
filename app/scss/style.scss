@@ -3,8 +3,8 @@
 @import "normalize";
 @import "glob";
 
-p {
-	@include main-text;
-}
+@import "./components/top";
+@import "./components/header";
+@import "./components/footer";
 
 @import "media";

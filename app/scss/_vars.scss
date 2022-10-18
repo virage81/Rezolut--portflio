@@ -1,14 +1,31 @@
+$default-color: #3c3d3d;
+$dark-color: #2f2f2f;
+$accent-color: #d0b194;
+
+$shadow: 0 1px 20px 0 #c2c2c2;
+
 @mixin main-text {
-	color: #2f2f2f;
+	color: $dark-color;
 	font: 55px/1 "Cormorant-Garamond-400", serif;
 }
 
 @mixin heading-6 {
-	color: #2f2f2f;
-	font: 15px/1.5 bold "Lato-700", sans-serif;
+	color: $dark-color;
+	font: 15px/1.5 "Lato-700", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
 }
 
-$default-color: #3c3d3d;
-$accent-color: #d0b194;
+@mixin footer-text {
+	font: 15px/1.5 "Lato-400", sans-serif;
+	text-decoration: none;
+	color: $dark-color;
+	opacity: 0.7;
+	letter-spacing: 0.01em;
+
+	transition: all 0.2s linear;
+
+	&:hover {
+		opacity: 1;
+	}
+}
