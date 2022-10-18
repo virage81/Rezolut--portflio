@@ -1,6 +1,10 @@
-@import 'vars';
-@import 'fonts';
-@import 'normalize';
-@import 'glob';
+@import "vars";
+@import "fonts";
+@import "normalize";
+@import "glob";
 
-@import 'media';
+p {
+	@include main-text;
+}
+
+@import "media";
