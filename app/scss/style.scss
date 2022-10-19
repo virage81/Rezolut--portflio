@@ -1,12 +1,14 @@
 @import "vars";
 @import "fonts";
 @import "normalize";
+@import "../../node_modules/slick-carousel/slick/slick";
 @import "glob";
 
 @import "./components/header";
 @import "./components/top";
 @import "./components/features";
 @import "./components/info";
+@import "./components/reviews";
 @import "./components/footer";
 
 @import "media";
