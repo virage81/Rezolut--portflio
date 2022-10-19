@@ -3,8 +3,9 @@
 @import "normalize";
 @import "glob";
 
-@import "./components/top";
 @import "./components/header";
+@import "./components/top";
+@import "./components/features";
 @import "./components/footer";
 
 @import "media";
