@@ -33,3 +33,25 @@ body {
 		scale: 1.1;
 	}
 }
+
+.link {
+	display: flex;
+	align-items: center;
+	gap: 0 15px;
+
+	width: fit-content;
+
+	color: $accent-color;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+
+	transition: all 0.2s linear;
+
+	&:hover {
+		scale: 1.07;
+	}
+
+	&-img {
+		padding-top: 2px;
+	}
+}
