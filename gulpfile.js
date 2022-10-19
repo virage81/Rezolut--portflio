@@ -40,7 +40,7 @@ function scripts() {
 }
 
 function images() {
-	return src("app/img/**/*.*")
+	return src("app/img/**/*")
 		.pipe(
 			imagemin([
 				imagemin.gifsicle({ interlaced: true }),
@@ -55,7 +55,7 @@ function images() {
 }
 
 function build() {
-	return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js"], { base: "app" }).pipe(dest("dist/"));
+	return src(["app/**/*.html", "app/fonts/*", "app/css/style.min.css", "app/js/main.min.js"], { base: "app" }).pipe(dest("dist/"));
 }
 
 function cleanDist() {
