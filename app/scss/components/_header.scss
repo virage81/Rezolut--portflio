@@ -72,11 +72,13 @@
 			line-height: 1.5;
 			color: $dark-color;
 
+			display: inline-block;
+
 			transition: all 0.2s linear;
 
 			&:hover {
-				font-size: 18px;
 				color: #000;
+				scale: 1.1;
 			}
 		}
 	}
@@ -288,13 +290,42 @@
 		}
 
 		&__nav {
-			top: 98px;
+			top: 104px;
 			padding-left: 20px;
 		}
 
-		&--fixed {
+		&.header--fixed {
+			padding-top: 10px;
+
 			.header__nav {
-				top: 98px;
+				top: 104px;
+				background-color: transparent;
+			}
+		}
+		&__controls-login {
+			svg {
+				path {
+					stroke: $dark-color;
+				}
+			}
+		}
+
+		&__controls-burger-button {
+			span {
+				background-color: $dark-color;
+
+				&::after,
+				&::before {
+					background-color: $dark-color;
+				}
+
+				&::after {
+					top: 10px;
+				}
+
+				&::before {
+					bottom: 10px;
+				}
 			}
 		}
 	}
