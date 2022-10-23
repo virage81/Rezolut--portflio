@@ -30,9 +30,10 @@
 				letter-spacing: 0.04em;
 
 				transition: all 0.2s linear;
+				display: inline-block;
 
 				&:hover {
-					font-size: 1.1em;
+					scale: 1.1;
 				}
 			}
 		}
@@ -107,6 +108,144 @@
 		&-text {
 			font: 18px/1.4 "Lato-400", sans-serif;
 			letter-spacing: 0.01em;
+		}
+	}
+}
+
+@media (max-width: 1030px) {
+	.top {
+		&__inner {
+			padding: 23.5vh 0 15vh;
+
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__info {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			position: relative;
+
+			width: 100%;
+			&-social-list {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-25%);
+
+				&__link {
+					color: $dark-color;
+				}
+			}
+
+			&-titleBox {
+				color: $dark-color;
+				text-align: center;
+			}
+
+			&-title {
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+
+		&__features {
+			flex-direction: row;
+			gap: 0 24px;
+
+			&-item {
+				padding: 25px;
+
+				width: 260px;
+			}
+		}
+	}
+}
+
+@media (max-width: 860px) {
+	.top {
+		&__info {
+			flex-direction: column;
+			justify-content: center;
+			ul.top__info-social-list {
+				position: static;
+
+				flex-direction: row;
+
+				display: flex;
+				gap: 0 2.3vh;
+				transform: translateY(0);
+
+				padding-bottom: 20px;
+
+				&__link {
+					&:hover {
+						scale: 1.2;
+					}
+				}
+			}
+
+			&-title {
+				font-size: 50px;
+
+				&__accent {
+					&::after {
+						background-color: #ffc38c;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.top {
+		&__inner {
+			justify-content: center;
+			padding: 0;
+		}
+
+		&__info {
+			* {
+				color: darken($dark-color, 10%);
+			}
+		}
+
+		&__features {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.top {
+		&__info {
+			&-title {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	.top {
+		&__info {
+			&-social-list__link {
+				font-size: 15px;
+			}
+
+			&-suptitle {
+				font-size: 15px;
+			}
+			&-title {
+				font-size: 35px;
+
+				&__accent::after {
+					bottom: 2px;
+				}
+			}
 		}
 	}
 }
