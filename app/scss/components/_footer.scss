@@ -2,13 +2,23 @@
 	padding: 125px 0 40px;
 	background: #f8f8f8;
 
-	&__inner {
-		display: flex;
+	&__logo {
+		display: none;
+		margin: 0 auto;
 	}
 
-	&__logo {
-		margin-right: auto;
-		height: fit-content;
+	&__inner {
+		display: flex;
+
+		.footer__logo {
+			display: block;
+			margin: 0 auto 0 0;
+			height: fit-content;
+		}
+	}
+
+	&__top {
+		display: flex;
 	}
 
 	&__menu {
@@ -150,6 +160,162 @@
 					scale: 1.1;
 				}
 			}
+		}
+	}
+
+	&__copy {
+		display: none;
+		gap: 0 35px;
+
+		margin: 0 auto;
+
+		&-item {
+			display: flex;
+			gap: 0 15px;
+		}
+
+		&-link {
+			@include footer-text;
+			opacity: 0.4;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		&-text {
+			@include footer-text;
+			opacity: 0.4;
+		}
+	}
+}
+
+@media (max-width: 1230px) {
+	.footer {
+		padding: 65px 40px;
+		&__inner {
+			flex-direction: column;
+			gap: 40px 0;
+
+			.footer__logo {
+				display: none;
+			}
+		}
+
+		&__logo {
+			display: block;
+			height: fit-content;
+			width: fit-content;
+
+			margin-bottom: 40px;
+		}
+
+		&__top {
+			justify-content: center;
+			gap: 0 40px;
+		}
+
+		&__menu {
+			padding-bottom: 0;
+
+			flex-direction: row;
+			justify-content: center;
+
+			&-top {
+				gap: 0 40px;
+
+				border-bottom: none;
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+
+			&-item {
+				text-align: center;
+				width: 50%;
+
+				& + & {
+					margin: 0;
+				}
+			}
+
+			&-copy {
+				display: none;
+			}
+
+			&.footer__menu--contacts {
+				margin: 0;
+
+				.footer__menu-top {
+					flex-direction: row;
+					padding-bottom: 0;
+				}
+
+				.footer__menu-item + .footer__menu-item {
+					margin: 0;
+				}
+			}
+		}
+
+		&__copy {
+			display: flex;
+		}
+	}
+}
+
+@media (max-width: 830px) {
+	.footer {
+		&__top {
+			flex-direction: column;
+			align-items: center;
+			gap: 40px 0;
+		}
+
+		&__copy {
+			flex-direction: column;
+			align-items: center;
+
+			gap: 5px 0;
+		}
+	}
+}
+
+@media (max-width: 610px) {
+	.footer {
+		padding: 55px 15px;
+		&__copy-item {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.footer {
+		&__title {
+			margin-bottom: 10px;
+		}
+
+		&__menu {
+			&-item {
+				width: 100%;
+			}
+			&-top {
+				flex-direction: column;
+				align-items: center;
+				gap: 25px 0;
+			}
+
+			&.footer__menu--contacts {
+				.footer__menu-top {
+					flex-direction: column;
+					align-items: center;
+					gap: 25px 0;
+				}
+			}
+		}
+
+		&__copy {
+			width: 100%;
 		}
 	}
 }
