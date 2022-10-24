@@ -70,6 +70,12 @@
 	}
 }
 
+@media (max-width: 1120px) {
+	.features__link {
+		margin: 0;
+	}
+}
+
 @media (max-width: 1050px) {
 	.features {
 		&__top {
@@ -96,6 +102,10 @@
 		}
 		&__item {
 			text-align: center;
+		}
+
+		&__link {
+			margin: 0 auto;
 		}
 	}
 }

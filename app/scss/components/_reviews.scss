@@ -64,6 +64,7 @@
 		position: absolute;
 		bottom: -16px;
 		z-index: 2;
+		padding: 0;
 
 		border: none;
 		outline: none;
@@ -91,5 +92,75 @@
 	.slick-next {
 		background: url(../img/arrow-next.svg) center no-repeat;
 		right: 0;
+	}
+}
+
+@media (max-width: 1230px) {
+	.reviews {
+		&__content {
+			&-text {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 860px) {
+	.reviews {
+		&__content {
+			&-text {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 830px) {
+	.reviews {
+		padding: 65px 0 80px;
+
+		&__title {
+			text-align: center;
+		}
+
+		&__item {
+			justify-content: center;
+			text-align: center;
+		}
+
+		&__content {
+			max-width: 90%;
+			width: 100%;
+			padding-right: 0;
+
+			&-text {
+				padding-bottom: 40px;
+				max-width: 100%;
+			}
+
+			&-author {
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+
+		&__photo {
+			display: none;
+		}
+
+		.slick-arrow {
+			bottom: -32px;
+		}
+
+		.slick-prev {
+			right: 50%;
+
+			transform: translateX(-20%);
+		}
+
+		.slick-next {
+			transform: translateX(20%);
+			left: 50%;
+		}
 	}
 }
